@@ -5,7 +5,7 @@ var cars = require("./vehicles");
 const port = 3000
 
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+  res.send('<li>/vehicles - See all vehicles</li><li>/vehicles/{Origin} - Filter all vehicles by Origin</li>')
 })
 app.get('/vehicles', (req, res) => {
     res.json({cars})
